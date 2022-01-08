@@ -34,7 +34,7 @@ signing_key_upload.jks
 .pub/
 /build/
 pubspec.lock
-
+/assets/
 #ios
 /ios/build
 ios/Podfile.lock
