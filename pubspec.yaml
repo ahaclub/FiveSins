@@ -45,11 +45,8 @@ flutter:
     - assets/audio/
     - assets/images/
     - assets/images/sins/
-    - assets/images/qq/
-    - assets/images/985/
-    - assets/images/shandong/
 
-flutter_icons:
-  image_path: "logo.png"
-  android: true
-  ios: true
+# flutter_icons:
+#   image_path: "logo.png"
+#   android: true
+#   ios: true
