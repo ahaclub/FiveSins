@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
   package="cat.love.mix">
   <application 
-    android:label="合成大瓜" 
+    android:label="FiveSins" 
     android:icon="@mipmap/ic_launcher" 
     android:roundIcon="@mipmap/ic_launcher"
     android:requestLegacyExternalStorage="true">

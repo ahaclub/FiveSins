@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '合成大瓜',
+      title: 'FiveSins',
       navigatorObservers: [NavigatorTool()],
       home: HomePage(),
     );

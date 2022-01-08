@@ -43,7 +43,7 @@
 	<false/>
 	<!-- custom config -->
 	<key>CFBundleDisplayName</key>
-	<string>合成大瓜</string>
+	<string>FiveSins</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>用于选择本地图片</string>
 	<!-- <key>NSMicrophoneUsageDescription</key>

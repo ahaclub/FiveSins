@@ -9,7 +9,8 @@ FiveSins is a Web3 Game
 - Rui Shang：交互和体验、世界观设计
 - Xin Ma：产品和经济模型设计
 
-​
+* ​github：[https://github.com/ahaclub/FiveSins](https://github.com/ahaclub/FiveSins)
+* youtube：[https://youtu.be/peDjeXcbGMg]{https://youtu.be/peDjeXcbGMg}
 
 ## 项目介绍
 **掉落合成的PVP链游**

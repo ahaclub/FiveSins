@@ -49,7 +49,7 @@ class _GameSettingPageState extends State<GameSettingPage> {
 
   GameSetting get setting => GameState.gameSetting;
 
-  String get _levelUp => setting.levelUp ? '合成大瓜' : '合成小瓜';
+  String get _levelUp => setting.levelUp ? 'FiveSins' : '合成小瓜';
 
   String get _random => setting.random
       ? '随机模式'
