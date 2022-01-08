@@ -18,7 +18,7 @@ FiveSins is a Web3 Game
 - 基于元素升级合成人类的世界观，项目希望借此引发人们对人性底层的思考
 
 * github：[https://github.com/ahaclub/FiveSins](https://github.com/ahaclub/FiveSins)
-* youtube：[https://youtu.be/peDjeXcbGMg]{https://youtu.be/peDjeXcbGMg}
+* youtube：[https://youtu.be/peDjeXcbGMg](https://youtu.be/peDjeXcbGMg)
 
 
 
