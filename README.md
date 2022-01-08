@@ -1,5 +1,5 @@
 # FiveSins
-A Web3 Game
+FiveSins is a Web3 Game
 
 ## ![image.png](https://cdn.nlark.com/yuque/0/2022/png/412186/1641655360859-7a7f169b-4932-44d4-beca-6d4d43a88274.png#clientId=u42df8fc7-f3b9-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=639&id=ub45f92b3&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1278&originWidth=2304&originalType=binary&ratio=1&rotation=0&showTitle=false&size=2182819&status=done&style=none&taskId=u1aaec929-627a-4379-bde1-470f6ebe1ab&title=&width=1152)
 ## 团队
@@ -14,7 +14,7 @@ A Web3 Game
 ## 项目介绍
 **掉落合成的PVP链游**
 
-- FiveSins 是一个收集卡牌参与对决的PVP游戏。玩家通过收集NFT卡牌，参与对局时自动分为两方阵营，卡牌掉落合成
+- FiveSins 是一个收集卡牌参与对决的 PVP 游戏。玩家通过收集 NFT 卡牌，参与对局时自动分为两方阵营，卡牌掉落合成
 - 秉持 Play to earn 的原则，每一次对局的胜利方会获得收益，若成功合成人类，则会获取超额收益
 - 基于元素升级合成人类的世界观，项目希望借此引发人们对人性底层的思考
 
@@ -73,5 +73,5 @@ A Web3 Game
    - 1/2 = 50%，胜者收益为 50% *150 = 75 SIN
    - 成本区间（60，90），净收益区间为（-15，15）
 - 败者：收益为0，成本区间为（60，90），净收益区间为（-90，-60）
-- 未合成大西瓜，胜者净收益区间为（-15，65），败者亏损净收益区间为（-90，-60）
+- 未合成人类，胜者净收益区间为（-15，65），败者亏损净收益区间为（-90，-60）
 - 每局结束对代币池的影响为（-105，5）
