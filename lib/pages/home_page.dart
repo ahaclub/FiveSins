@@ -1,3 +1,5 @@
+import 'package:FiveSins/tools/metamask/main.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../game/game_life.dart';
@@ -11,10 +13,6 @@ import 'game_page.dart';
 import 'setting/game_setting_page.dart';
 
 class HomePage extends StatelessWidget {
-  void _start() {
-    GameLife.start();
-  }
-
   void _about() {
     NavigatorTool.push(AboutPage());
   }
@@ -65,8 +63,31 @@ class HomePage extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                lExpanded(
-                  child: _bottomAction(),
+                Container(
+                  width: 500,
+                  height: 200,
+                  margin: EdgeInsets.only(top: 80),
+                  child: MetamaskPage(),
+                ),
+                CupertinoButton(
+                  onPressed: () => GameLife.start(),
+                  color: Colors.white,
+                  padding: EdgeInsets.all(0),
+                  pressedOpacity: 0.8,
+                  child: Container(
+                    width: 200,
+                    height: 50,
+                    child: Center(
+                      child: Text(
+                        'Get Start',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
                 _hideGame(),
               ],
@@ -84,18 +105,5 @@ class HomePage extends StatelessWidget {
           height: 1,
           child: GamePage(hide: true),
         ),
-      );
-
-  Widget _bottomAction() => Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          lButton(
-            'Get Start',
-            onTap: _start,
-            height: 5.vw * 2.2,
-            colorBg: Colors.black,
-            colorText: Colors.white,
-          ),
-        ],
       );
 }

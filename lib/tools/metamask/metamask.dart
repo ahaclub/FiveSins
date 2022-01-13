@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_web3/flutter_web3.dart';
 
 class MetaMaskProvider extends ChangeNotifier {
-  static const operatingChain = 4;
+  static const operatingChain = 137;
 
   String currentAddress = '';
 
