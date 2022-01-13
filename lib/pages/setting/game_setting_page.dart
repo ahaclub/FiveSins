@@ -49,13 +49,13 @@ class _GameSettingPageState extends State<GameSettingPage> {
 
   GameSetting get setting => GameState.gameSetting;
 
-  String get _levelUp => setting.levelUp ? 'FiveSins' : '合成小瓜';
+  String get _levelUp => setting.levelUp ? 'FiveSins' : 'Small';
 
   String get _random => setting.random
-      ? '随机模式'
+      ? 'Random'
       : setting.levelUp
-          ? '小瓜模式'
-          : '大瓜模式';
+          ? 'Small'
+          : 'Big';
 
   @override
   Widget build(BuildContext context) {
@@ -73,9 +73,10 @@ class _GameSettingPageState extends State<GameSettingPage> {
                   if (!widget.fromHome) {
                     await DialogTool.show(
                       context,
-                      title: '提示',
-                      content: '只能从首页进入设置该选项',
-                      actionText: '首页',
+                      title: 'Tip',
+                      content:
+                          'This option can only be accessed from the home page',
+                      actionText: 'HomePage',
                       action: _goHome,
                     );
                     return;
@@ -94,11 +95,13 @@ class _GameSettingPageState extends State<GameSettingPage> {
                     setting.gravity = v;
                     await setting.update();
                   }),
-                _switchItem('音效', value: setting.music, onChanged: (v) async {
+                _switchItem('Sound Effect', value: setting.music,
+                    onChanged: (v) async {
                   setting.music = v;
                   await setting.update();
                 }),
-                _switchItem('动效', value: setting.bloom, onChanged: (v) async {
+                _switchItem('Animation', value: setting.bloom,
+                    onChanged: (v) async {
                   setting.bloom = v;
                   await setting.update();
                 }),

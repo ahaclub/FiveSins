@@ -3,7 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../game/my_game.dart';
-import '../tools/navigator_tool.dart';
 import '../tools/sensor_tool.dart';
 import '../tools/system_tool.dart';
 
@@ -37,6 +36,9 @@ class _GamePageState extends State<GamePage> {
         }
       },
       child: Scaffold(
+        appBar: AppBar(
+          title: Text('s'),
+        ),
         body: SafeArea(
           child: LayoutBuilder(
             builder: (_, constraints) {

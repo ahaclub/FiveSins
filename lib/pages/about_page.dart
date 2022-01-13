@@ -1,32 +1,24 @@
 import 'package:flutter/material.dart';
-
-import '../tools/navigator_tool.dart';
 import '../tools/screen/screen_config.dart';
 import '../tools/screen/screen_extension.dart';
 import '../widgets/base_widget.dart';
 import '../widgets/pulse.dart';
 
 class AboutPage extends StatelessWidget {
-  void _back() {
-    NavigatorTool.pop();
-  }
-
   @override
   Widget build(BuildContext context) {
     return ScreenConfig(
       builder: () => Scaffold(
-        backgroundColor: Colors.grey[100],
+        backgroundColor: Colors.yellow,
         appBar: AppBar(title: Text('About')),
         body: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Center(
             child: Column(
               children: [
-                Text('Hi'),
-                SizedBox(height: 300),
-                _topAction(),
-                _madeWithLove(),
+                SizedBox(height: 200),
                 _bottomAction(),
+                _madeWithLove(),
               ],
             ),
           ),
@@ -34,21 +26,6 @@ class AboutPage extends StatelessWidget {
       ),
     );
   }
-
-  Widget _topAction() => Container(
-        padding: EdgeInsets.all(5.vw),
-        child: Row(
-          children: [
-            lIconButton(
-              Icons.chevron_left,
-              size: 10.vw,
-              color: Colors.black,
-              onTap: _back,
-            ),
-            lExpanded(),
-          ],
-        ),
-      );
 
   Widget _madeWithLove() => Row(
         children: [
@@ -62,7 +39,7 @@ class AboutPage extends StatelessWidget {
           Pulse(
             child: Icon(
               Icons.favorite,
-              size: 5.vw,
+              size: 30,
               color: Colors.red,
             ),
           ),

@@ -37,11 +37,14 @@ class HomePage extends StatelessWidget {
           title: Row(
             children: [
               Expanded(
-                  child: Text('FiveSins',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w700,
-                      ))),
+                child: Text(
+                  'FiveSins',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
               lIconButton(
                 Icons.info,
                 size: 30,

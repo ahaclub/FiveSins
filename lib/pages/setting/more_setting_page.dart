@@ -16,7 +16,6 @@ class MoreSettingPage extends StatelessWidget {
     NavigatorTool.pop();
   }
 
-
   GameSetting get setting => GameState.gameSetting;
 
   @override
@@ -56,7 +55,7 @@ class MoreSettingPage extends StatelessWidget {
             ),
             lExpanded(
                 child: lText(
-              '高级设置',
+              'Advanced Settings',
               bold: true,
               size: 18,
             )),

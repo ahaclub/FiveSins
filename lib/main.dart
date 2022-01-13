@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         splashColor: Colors.transparent,
         fontFamily: 'Montserrat',
         scaffoldBackgroundColor: Colors.black45,
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.yellow,
         appBarTheme: AppBarTheme(
           systemOverlayStyle: SystemUiOverlayStyle(
             statusBarColor: Colors.transparent,
