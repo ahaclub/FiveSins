@@ -33,30 +33,35 @@ class HomePage extends StatelessWidget {
     return ScreenConfig(
       builder: () => Scaffold(
         backgroundColor: Colors.yellow,
+        appBar: AppBar(
+          title: Row(
+            children: [
+              Expanded(
+                  child: Text('FiveSins',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.w700,
+                      ))),
+              lIconButton(
+                Icons.info,
+                size: 30,
+                color: Colors.black,
+                onTap: _about,
+              ),
+              lIconButton(
+                Icons.settings,
+                size: 30,
+                color: Colors.black,
+                onTap: _setting,
+              ),
+            ],
+          ),
+          backgroundColor: Colors.yellowAccent,
+        ),
         body: SafeArea(
           child: Center(
             child: Column(
               children: [
-                Container(
-                  padding: EdgeInsets.all(5.vw),
-                  child: Row(
-                    children: [
-                      lIconButton(
-                        Icons.info,
-                        size: 10.vw,
-                        color: Colors.black,
-                        onTap: _about,
-                      ),
-                      lExpanded(),
-                      lIconButton(
-                        Icons.settings,
-                        size: 10.vw,
-                        color: Colors.black,
-                        onTap: _setting,
-                      ),
-                    ],
-                  ),
-                ),
                 lExpanded(
                   child: _bottomAction(),
                 ),

@@ -8,7 +8,7 @@ class ScreenTool {
   ScreenTool._();
   static final ScreenTool _instance = ScreenTool._();
 
-  static const Size defaultSize = Size(2080, 1920);
+  static const Size defaultSize = Size(1900, 1020);
 
   /// 设计稿尺寸，单位px
   Size uiSize;

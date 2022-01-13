@@ -33,7 +33,7 @@ class _GamePageState extends State<GamePage> {
       onHorizontalDragEnd: (_) {
         if (kIsWeb) {
           // 侧滑返回手势
-          NavigatorTool.pop();
+          // NavigatorTool.pop();
         }
       },
       child: Scaffold(

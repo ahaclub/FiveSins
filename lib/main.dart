@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'pages/home_page.dart';
 import 'tools/navigator_tool.dart';
@@ -14,6 +15,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'FiveSins',
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        splashColor: Colors.transparent,
+        fontFamily: 'Montserrat',
+        scaffoldBackgroundColor: Colors.black45,
+        primarySwatch: Colors.pink,
+        appBarTheme: AppBarTheme(
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: Colors.transparent,
+            statusBarBrightness: Brightness.light,
+            statusBarIconBrightness: Brightness.dark,
+          ),
+        ),
+      ),
       navigatorObservers: [NavigatorTool()],
       home: HomePage(),
     );
